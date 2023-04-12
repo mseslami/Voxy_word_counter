@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Counter</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles/designed.css">
+</head>
+<body>
+<img class="logo-image" src="/static/images/voxy.png" alt="voxy logo">
+<h1 class="title">Word Counter</h1>
+<form action="#" method="post">
+    <table>
+        <tr>
+            <td class="font-size-md">WORDS</td>
+            <td class="font-size-md">CHARACTERS</td>
+        </tr>
+        <tr>
+            <td class="font-size-lg">{{ wordCount }}</td>
+            <td class="font-size-lg">{{ charCount }}</td>
+        </tr>
+    </table>
+
+    <textarea id="text" required rows="15" cols="100" placeholder="Insert your text..."
+              name="text">{{ text }}</textarea>
+    <button type="submit">Count Words</button>
+</form>
+</body>
+</html>
